@@ -1,0 +1,67 @@
+.container{
+    height: 100vh;
+    width: 100%;
+    background-image: url(../images/background.png);
+    background-position: center;
+    background-size:cover;
+    padding-left: 5%;
+    padding-right: 5%;
+    box-sizing: border-box;
+    position: relative;
+    
+}
+.navbar{
+    height: 15vh;
+    width: 100%;
+    margin: auto;
+    display: flex;
+}
+nav{
+    flex: 1;
+    padding-left: 60px;
+    
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0px 20px;  
+}
+nav ul li a{
+text-decoration: none;
+color: darkmagenta;
+font-size: 20px;
+}
+
+.content{
+    margin-top:10%;
+    margin-left: 10%;
+}
+
+.content p{
+    font-size: 25px;
+    color: #660066;
+}
+.content h1{
+    font-size: 60px;
+    font-weight: 100;
+    margin-top: 24px;
+    margin-bottom: 15px;
+    color: violet;
+}
+
+.arrow-icons{
+    margin-top: 40px;
+    display: flex;
+}
+
+.arrow-icons img{
+width: 40px;
+margin-right: 25px;
+}
+
+.logo2{
+    height: 40%;
+    position: absolute;
+    bottom: 50px;
+    right: 160px;
+}

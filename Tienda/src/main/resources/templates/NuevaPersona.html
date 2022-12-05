@@ -1,0 +1,36 @@
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Nueva Persona</title>
+        <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                </head>
+                <body>
+                    <h1 th:text="${Titulo}"></h1>
+                    <a href="@{/}">Regresar</a>
+                    <br/>
+                    <form th:action="@{/guardarPersona}" method="Post" th:object="${persona}">
+                        <label for="nombre">Nombre: </label>
+                        <input type="text" name="nombre" th:field="*{nombre}">
+                        <br/>
+                        <label for="nombre">Primer Apellido:  </label>
+                        <input type="text" name="nombre" th:field="*{apellido1}">
+                        <br/>
+                        <label for="nombre">Segundo Apellido:  </label>
+                        <input type="text" name="nombre" th:field="*{apellido2}">
+                        <br/>
+                        <label for="nombre">Telefono:  </label>
+                        <input type="text" name="nombre" th:field="*{telefono}">
+                        <br/>
+                        <label for="nombre">Correo:  </label>
+                        <input type="text" name="nombre" th:field="*{email}">
+                        <br/>
+                        <label for="pais">País:  </label>
+                        <input type="text" name="nombre" th:field="*{pais}">
+                        <br/>
+                        <input type="submit" name="guardar" value="Guardar"/>
+                    </form>
+
+
+                </body>
+                </html>
